@@ -39,8 +39,9 @@ def nuevo_contacto(request):
     return render(request,'gestion_productos/nuevo_contacto.html',{'form':form})  
 
 def editar_contacto(request, id):
+    form = ContactoForm(data=request.POST)
     contacto = Contacto.objects.get(id=id)
-    return render(request,'gestion_productos/editar_contacto.html', {'contacto':contacto})
+    return render(request,'gestion_productos/editar_contacto.html', {'contacto':contacto, 'form': form})
 
 # def editar_producto(request, id):
 #     producto = Inventario.objects.get(id=id)
