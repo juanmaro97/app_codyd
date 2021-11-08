@@ -24,7 +24,7 @@ class Contacto(models.Model):
     direccion = models.CharField(db_column='Direccion', max_length=45, blank=True, null=True)  # Field name made lowercase.
     email = models.CharField(db_column='Email', max_length=45, blank=True, null=True)  # Field name made lowercase.
     cedula_nit = models.CharField(db_column='Cedula_NIT', max_length=45, blank=True, null=True)  # Field name made lowercase.
-    id_tipo_contacto = models.ForeignKey('TipoContacto', models.DO_NOTHING, db_column='id_TipoContacto',null=True)  # Field name made lowercase.
+    id_tipo_contacto = models.ForeignKey('TipoContacto', models.DO_NOTHING, db_column='id_TipoContacto')  # Field name made lowercase.
 
     class Meta:
         # managed = False
