@@ -75,15 +75,13 @@ WSGI_APPLICATION = 'app_codyd.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'codyd_db',
-        'USER': 'root',
-        'PASSWORD': '1234',
-        'PORT': 3306,
-        'OPTIONS': {'init_command':"SET sql_mode = 'STRICT_TRANS_TABLES'"}
+        'NAME': 'juanmaro97$codyd_db',
+        'USER': 'juanmaro97',
+        'PASSWORD': 'boanerges98',
+        'HOST': 'juanmaro97.mysql.pythonanywhere-services.com',
     }
 }
 
